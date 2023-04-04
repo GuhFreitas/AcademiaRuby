@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <link rel="Icon" href="logo.ico">
+    <link rel="stylesheet" href="imc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <title>Academia RubY</title>
+</head>
+<body> 
+    <header>
+        <div class="menu-content">
+            <h1 class="logo"> </h1>
+            <img src="https://i.im.ge/2023/04/03/IPWq0K.logoattt.png"> 
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="Academia.html">home</a></li>
+                    <li><a href="planos.html">planos</a></li>
+                    <li><a href="imc.html">IMC</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="https://www.instagram.com/academiaruby_/"><i class="fab fa-instagram"></i></a></li>
+                    <li><input type="checkbox" class="checkbox" id="chk"/> 
+                        <label class="label" for="chk">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <div class="ball"></div>
+                        </label></li>   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <div id="calc-container">
+          <h2>Calculadora de IMC</h2>
+          <form id="imc-form">
+            <div class="form-inputs">
+              <div class="form-control">
+                <label for="height">Altura:</label>
+                <input type="text" name="height" id="height" placeholder="Exemplo: 1,80" required/>
+              </div>
+              <div class="form-control">
+                <label for="weight">Peso:</label>
+                <input type="text" name="weight" id="weight" placeholder="Exemplo: 70"/>  
+              </div>
+            </div>
+            <div class="action-control">
+              <button id="calc-btn">Calcular</button>
+              <button id="clear-btn">Limpar</button>
+            </div>
+          </form>
+        </div>
+        <div id="result-container" class="hide">
+          <p id="imc-number">Seu IMC: <span></span></p>
+          <p id="imc-info">Situação atual: <span></span></p>
+          <h3>Confira as classificações</h3>
+          <div id="imc-table">
+            <div class="table-header">
+              <h4>IMC</h4>
+              <h4>Classificação</h4>
+              <h4>Obesidade</h4>
+            </div>
+          </div>
+          <button id="back-btn">Voltar</button>
+        </div>
+      </div>
+      </main>
+    <script src="imc.js"></script>
+</body>
+</html>
